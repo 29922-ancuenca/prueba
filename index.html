@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prueba Laboratorio - Grupo 2</title>
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- ===== Fila 1: Logo ===== -->
+  <div class="row seccion" id="fila-logo">
+    <div class="col-xs-12 text-center">
+      <img src="img/logo_ESPE.png" alt="Logo" class="img-responsive center-block" id="logo">
+    </div>
+  </div>
+
+  <!-- ===== Fila 2: Navbar ===== -->
+  <div class="row seccion">
+    <nav class="navbar navbar-inverse" role="navigation" style="margin-bottom: 0;">
+      <div class="container-fluid">
+
+        <!-- Botón hamburguesa -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+            <span class="sr-only">Mostrar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Grupo 2</a>
+        </div>
+
+        <!-- Opciones del menú -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Docente</a></li>
+            <li><a href="Login_glaphynicon/index.html" target="_blank">Comandante</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Grupos <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="disabled"><a href="#">Grupo 1</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="active"><a href="#" id="grupo2">Grupo 2</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a href="#">Grupo 3</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a href="#">Grupo 4</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a href="#">Grupo 5</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a href="#">Grupo 6</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a href="#">Grupo 7</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a href="#">Grupo 8</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Buscador alineado a la derecha -->
+          <form class="navbar-form navbar-right" role="search" onsubmit="return false;">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar...">
+            </div>
+             <div class="form-group form-group-center">
+            <button type="submit" class="btn btn-primary center-block">Buscar</button>
+          </div>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- ===== Fila 3: Tres columnas ===== -->
+  <div class="row seccion text-center" id="contenido">
+
+    <!-- Columna 1 -->
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="bloque">
+        <button class="btn btn-default btn-block">
+          <span class="glyphicon glyphicon-user"></span> Login
+        </button>
+        <button class="btn btn-default btn-block">
+          <span class="glyphicon glyphicon-hdd"></span> Registro
+        </button>
+        <button class="btn btn-default btn-block">
+          <span class="glyphicon glyphicon-book"></span> Producto
+        </button>
+        <a href="formulario.html" class="btn btn-default btn-block">
+          <span class="glyphicon glyphicon-user"></span> Formulario
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="bloque verde">
+        <h3>Aplicaciones de Tecnologías Web</h3>
+        <p><strong>Integrantes:</strong></p>
+        <p>Alisson Nicole Cuenca Morales</p>
+        <p>Stalin Fabián Roche Córdova</p>
+        <p><strong>NRC:</strong> 29922</p>
+        <p><strong>Grupo:</strong> 02</p>
+      </div>
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="bloque negro">
+        <iframe 
+          width="100%" 
+          height="220" 
+          src="https://www.youtube.com/embed/WrjjDqAsVQI" 
+          title="Video de presentación"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Fila 4: Tabla ===== -->
+  <div class="row seccion" id="fila-tabla" style="display:none;">
+    <div class="col-lg-12">
+      <div class="bloque tabla text-center">
+        <h3><strong>Integrantes</strong></h3>
+        <h4>Grupo 2</h4>
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Correo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color:#d9edf7;">
+              <td>1</td>
+              <td>Alisson Nicole</td>
+              <td>Cuenca Morales</td>
+              <td>ancuenca@espe.edu.ec</td>
+            </tr>
+            <tr style="background-color:#dff0d8;">
+              <td>2</td>
+              <td>Stalin Fabián</td>
+              <td>Roche Córdova</td>
+              <td>sfroche@espe.edu.ec</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer id="footer" class="text-center">
+    <div class="social-icons">
+      <a href="#" class="btn-social fb">
+        <img src="fonts/251.svg" alt="Facebook" class="icon-social"> Facebook
+      </a>
+      <a href="#" class="btn-social tw">
+        <img src="fonts/twitter.png" alt="Twitter" class="icon-social"> Twitter
+      </a>
+      <a href="#" class="btn-social yt">
+        <img src="fonts/youtube.png" alt="YouTube" class="icon-social"> Youtube
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Script para mostrar/ocultar la tabla -->
+  <script>
+    $(document).ready(function(){
+      $("#grupo2").click(function(e){
+        e.preventDefault();
+        $("#fila-tabla").slideToggle("slow");
+      });
+    });
+  </script>
+</body>
+</html>
